@@ -1,13 +1,4 @@
 import Link, { LinkProps } from 'next/link';
-// export type UnstyledLinkProps = {
-//     href: string;
-//     children: React.ReactNode;
-//     openNewTab?: boolean;
-//     className?: string;
-//   } & React.ComponentPropsWithoutRef<'a'> &
-//     LinkProps;
-
-// import UnstyledLink from './Common/Links/UnstyledLink';
 
 const links = [
   { href: '/', label: 'Route' },
@@ -16,11 +7,11 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav className="bg-gray-700">
+    <nav className="bg-gray-700 text-white ">
       <ul className="flex items-center justify-between px-8 py-4">
         <li>
           <Link href="/">
-            <a className="font-bold text-green-400">Home</a>
+            <a className=" font-display cursor-ne-resize">ANGGI</a>
           </Link>
         </li>
         <ul className="flex items-center justify-between space-x-4">
