@@ -7,7 +7,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Seo />
-      <Layout>Main Page</Layout>
+      <Layout>
+        <div className="min-h-screen">mainpgae</div>
+      </Layout>
     </>
   );
 };
