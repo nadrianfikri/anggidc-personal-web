@@ -2,7 +2,8 @@ import { faStream, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
-import CustomLink from '../atoms/Links/CustomLink';
+
+import { CustomLink } from '../atoms';
 
 export default function MobileNav() {
   const links = [
@@ -15,8 +16,8 @@ export default function MobileNav() {
   ];
 
   return (
-    <Menu as="div" className="md:hidden inline-block ">
-      <Menu.Button className="relative z-20">{({ open }) => <FontAwesomeIcon className="text-darker/80" icon={open ? faTimes : faStream} />}</Menu.Button>
+    <Menu as="div" className="md:hidden inline-block font-medium ">
+      <Menu.Button className="relative z-20">{({ open }) => <FontAwesomeIcon className="text-darker/80 hover:scale-125 transition-all" icon={open ? faTimes : faStream} />}</Menu.Button>
       <Transition
         as={Fragment}
         enter="transition ease-in duration-300"

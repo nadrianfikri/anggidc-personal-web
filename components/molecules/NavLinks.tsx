@@ -1,4 +1,4 @@
-import CustomLink from '../atoms/Links/CustomLink';
+import { CustomLink } from '../atoms';
 
 const links = [
   { href: '/Tentang', label: 'Tentang' },

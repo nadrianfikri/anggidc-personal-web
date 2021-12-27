@@ -1,3 +1,6 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
+/** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -7,8 +10,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        primary: ['Montserrat', ...fontFamily.sans],
         display: ['Raleway', 'sans-serif'],
       },
+
       colors: {
         darker: '#463f3a',
         midDark: '#8a817c',

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* Write your own custom base styles here */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  .font-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-darker via-slate-300 to-midDark;
+  }
+}
+
 @layer utilities {
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300), linear-gradient(to right, #463f3a, #bcb8b1);

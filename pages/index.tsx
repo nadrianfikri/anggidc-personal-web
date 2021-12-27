@@ -1,9 +1,12 @@
 import type { NextPage } from 'next';
-import Nav from '@/components/organisms/Nav';
+
+import Seo from '@/components/Seo';
+import { Nav } from '@/components/organisms';
 
 const Home: NextPage = () => {
   return (
     <>
+      <Seo />
       <Nav />
     </>
   );

@@ -13,8 +13,9 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet" />
         </Head>
-        <body className="bg-light relative">
+        <body className="relative text-sm font-primary md:text-base bg-light text-darker">
           <Main />
           <NextScript />
         </body>
