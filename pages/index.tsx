@@ -1,16 +1,10 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import Nav from '../components/atoms/Nav';
-import styles from '../styles/Home.module.css';
+import Nav from '@/components/organisms/Nav';
 
 const Home: NextPage = () => {
   return (
     <>
       <Nav />
-      <div style={{ transform: 'scaleX(-1)' }} className="container bg-slate-500 ">
-        <h1 className=" text-white py-10 text-3xl  font-display underline">Hello world!</h1>;
-      </div>
     </>
   );
 };
