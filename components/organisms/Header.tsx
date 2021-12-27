@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { NavLinks, MobileNav } from '../molecules';
 
-export default function Nav() {
+export default function Header() {
   return (
     <nav className="py-8 border-b-2 border-stone-400 border-dashed">
       <ul className="flex items-center justify-between px-10 md:px-20 lg:px-36">

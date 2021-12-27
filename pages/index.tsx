@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 
 import Seo from '@/components/Seo';
-import { Nav } from '@/components/organisms';
+import Layout from '@/components/Layout';
 
 const Home: NextPage = () => {
   return (
     <>
       <Seo />
-      <Nav />
+      <Layout>Main Page</Layout>
     </>
   );
 };
