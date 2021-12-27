@@ -10,9 +10,7 @@ export default function Nav() {
             <a className="font-display text-4xl">ADC</a>
           </Link>
         </li>
-        <ul className="hidden md:flex items-center justify-between space-x-10 font-medium">
-          <NavLinks />
-        </ul>
+        <NavLinks />
         <MobileNav />
       </ul>
     </nav>

@@ -11,12 +11,12 @@ const links = [
 
 export default function NavLinks() {
   return (
-    <>
+    <ul className="hidden md:flex items-center justify-between space-x-10 font-medium">
       {links.map(({ href, label }) => (
         <li key={`${href}${label}`}>
           <CustomLink href={href}>{label}</CustomLink>
         </li>
       ))}
-    </>
+    </ul>
   );
 }
