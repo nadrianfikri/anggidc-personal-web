@@ -16,6 +16,10 @@
   .font-gradient {
     @apply text-transparent bg-clip-text bg-gradient-to-br from-darker via-slate-300 to-midDark;
   }
+
+  .wrapper {
+    @apply px-10 md:px-20 lg:px-36;
+  }
 }
 
 @layer utilities {

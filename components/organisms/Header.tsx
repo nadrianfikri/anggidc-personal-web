@@ -16,7 +16,7 @@ export default function Header() {
     };
   });
   return (
-    <header className="sticky top-0 w-full bg-light">
+    <header className="sticky z-10 top-0 w-full bg-light">
       <nav className={`py-4 md:py-8 transition-all duration-500 ${onTop ? '' : 'border-b-2 border-stone-400 border-dashed'} `}>
         <ul className="flex items-center justify-between px-10 md:px-20 lg:px-36">
           <li>

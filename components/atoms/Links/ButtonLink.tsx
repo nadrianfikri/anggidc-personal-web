@@ -11,12 +11,12 @@ export default function ButtonLink({ children, className = '', variants = 'prima
     <UnstyledLink
       {...rest}
       className={clsx(
-        'py-2 px-4 inline-block rounded font-bold hover:text-primary-400 animated-underline',
+        'py-1 px-6 inline-block  font-bold hover:text-cyan-400 hover:-translate-y-1 animated-underline',
         'border border-gray-600',
         'focus:outline-none focus-visible:text-primary-400',
         {
-          'bg-dark text-white': variants === 'primary',
-          'bg-white text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark': variants === 'secondary',
+          'bg-darker text-white': variants === 'primary',
+          'bg-white text-darker hover:bg-darker hover:text-er focus-visible:text-dark': variants === 'secondary',
         },
         className
       )}
