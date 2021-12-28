@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 
 import Seo from '@/components/Seo';
 import Layout from '@/components/Layout';
-import { Hero } from '@/components/index';
+import { Content, Hero } from '@/components/index';
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       <Seo />
       <Layout>
         <Hero />
+        <Content />
       </Layout>
     </>
   );
