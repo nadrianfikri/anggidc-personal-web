@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="wrapper py-20  space-y-10 md:space-y-24">
       <Row className="items-center justify-center gap-y-6 md:gap-24 flex-wrap">
-        <div className="md:basis-1/3">
+        <div className=" md:basis-1/3">
           <Image src="/images/people.png" width={270} height={300} alt="img" />
         </div>
         <div className="md:basis-1/2 leading-8">
