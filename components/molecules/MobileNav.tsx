@@ -17,7 +17,14 @@ export default function MobileNav() {
 
   return (
     <Menu as="div" className="md:hidden inline-block font-medium ">
-      <Menu.Button className="relative z-20">{({ open }) => <FontAwesomeIcon className="text-darker/80 hover:scale-125 transition-all" icon={open ? faTimes : faStream} />}</Menu.Button>
+      <Menu.Button className="relative z-20">
+        {({ open }) => (
+          <FontAwesomeIcon
+            className="text-darker/80 hover:scale-125 transition-all"
+            icon={open ? faTimes : faStream}
+          />
+        )}
+      </Menu.Button>
       <Transition
         as={Fragment}
         enter="transition ease-in duration-300"
@@ -27,7 +34,10 @@ export default function MobileNav() {
         leaveFrom="transform translate-x-0"
         leaveTo="transform  translate-x-full"
       >
-        <Menu.Items as="ul" className="absolute flex flex-col items-center justify-center top-0 right-0 w-3/4 h-screen bg-white/80 rounded-l-2xl shadow-xl gap-8 backdrop-blur-xl">
+        <Menu.Items
+          as="ul"
+          className="absolute flex flex-col items-center justify-center top-0 right-0 w-3/4 h-screen bg-white/80 rounded-l-2xl shadow-xl gap-8 backdrop-blur-xl"
+        >
           <>
             {links.map(({ href, label }) => (
               <Menu.Item as="li" key={href + label}>
