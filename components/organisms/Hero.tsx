@@ -7,15 +7,12 @@ import { ButtonLink, Row, UnstyledLink } from '../atoms';
 export default function Hero() {
   return (
     <div className="wrapper py-10 md:py-20  space-y-10 md:space-y-24">
-      <Row className="items-center justify-center gap-y-6 md:gap-24 flex-wrap">
-        <div className=" md:basis-1/3  md:block hidden">
-          <Image src="/images/people.png" width={270} height={300} alt="img" />
-        </div>
-        <div className="md:basis-1/2 leading-8">
-          <h1 className="font-bol  text-2xl">Hi!</h1>
-          <h2 className="font-bold  text-3xl mb-4">
+      <Row className="items-center justify-between flex-wrap">
+        <div className="md:basis-[57%] leading-8">
+          <h2 className="text-2xl">Hi!</h2>
+          <h1 className="font-bold text-[32px] mb-4">
             Kamu bisa memanggilku <span className="">Anggi</span>
-          </h2>
+          </h1>
           <p>
             Aku senang menulis atau apapun tentang literasi bahasa terutama
             <strong> Bahasa Indonesia</strong> dan website ini akan berisi
@@ -29,6 +26,9 @@ export default function Hero() {
           >
             Masuk ke Blog
           </ButtonLink> */}
+        </div>
+        <div className=" md:basis-1/3  md:block hidden">
+          <Image src="/images/people.png" width={270} height={300} alt="img" />
         </div>
       </Row>
       <section className="flex items-center justify-center">
