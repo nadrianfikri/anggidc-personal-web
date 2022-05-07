@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { NavLinks, MobileNav } from '../molecules';
-import { useScroll } from 'hooks/useScroll';
+import { useScroll } from '@/hooks/useScroll';
 
 export default function Header() {
   const { scrollY, scrollDirection } = useScroll();
