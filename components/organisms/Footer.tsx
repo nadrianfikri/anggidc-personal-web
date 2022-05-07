@@ -20,15 +20,15 @@ export default function Footer() {
     },
     {
       icon: faLinkedin,
-      href: '/',
+      href: 'https://www.linkedin.com/in/anggidwicantika/',
     },
     {
       icon: faInstagram,
-      href: '/',
+      href: 'https://www.instagram.com/anggidece/',
     },
     {
       icon: faTwitter,
-      href: '/',
+      href: 'https://www.twitter.com/anggidece/',
     },
   ];
 
