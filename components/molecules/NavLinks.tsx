@@ -1,12 +1,12 @@
 import { CustomLink } from '../atoms';
 
 const links = [
-  { href: '/Tentang', label: 'Tentang' },
-  { href: '/Blog', label: 'Blog' },
-  { href: '/Cerita', label: 'Cerita' },
-  { href: '/Frasa', label: 'Frasa' },
-  { href: '/Puisi', label: 'Puisi' },
-  { href: '/Kontak', label: 'Kontak' },
+  { href: '/tentang', label: 'Tentang' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/cerita', label: 'Cerita' },
+  { href: '/frasa', label: 'Frasa' },
+  { href: '/puisi', label: 'Puisi' },
+  { href: '/kontak', label: 'Kontak' },
 ];
 
 export default function NavLinks() {
