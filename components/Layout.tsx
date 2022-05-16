@@ -1,7 +1,7 @@
-import { FunctionComponent } from 'react';
+import React from 'react';
 import { Footer, Header } from './organisms';
 
-const Layout: FunctionComponent = ({ children }) => {
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Header />
