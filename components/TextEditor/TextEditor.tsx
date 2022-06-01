@@ -1,4 +1,14 @@
 import ReactQuill from 'react-quill';
+import styled from '@emotion/styled';
+
+const Wrapper = styled.div`
+  .ql-toolbar {
+    background-color: #bcb8b150;
+  }
+  .ql-editor {
+    background-color: #ffffff;
+  }
+`;
 
 interface TextEditorProps {
   value: string;
@@ -39,14 +49,16 @@ const TextEditor: React.FC<TextEditorProps> = ({
     ];
 
   return (
-    <ReactQuill
-      modules={modules}
-      formats={formats}
-      value={value}
-      onChange={onChange}
-      style={{ width: '1000px', height: '500px' }}
-      {...props}
-    />
+    <Wrapper>
+      <ReactQuill
+        modules={modules}
+        formats={formats}
+        value={value}
+        onChange={onChange}
+        style={{ height: '500px' }}
+        {...props}
+      />
+    </Wrapper>
   );
 };
 
