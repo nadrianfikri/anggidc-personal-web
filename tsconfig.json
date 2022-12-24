@@ -24,7 +24,8 @@
       "@/config/*": ["config/*"],
       "@/types/*": ["types/*"],
       "@/helpers/*": ["helpers/*"],
-      "@/api/*": ["api/*"]
+      "@/api/*": ["api/*"],
+      "@/view/*": ["view/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
